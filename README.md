@@ -52,3 +52,5 @@ console.log(new Date().minusMinutes(1).format('yyyyMMdd hh:MM:ss'));//20121204 1
 console.log(new Date().addSeconds(1).format('yyyyMMdd hh:MM:ss'));//20121204 11:27:39
 
 console.log(new Date().minusMinutes(1).format('yyyyMMdd hh:MM:ss'));//20121204 11:26:38
+
+console.log('20121204140135'.format('yyyyMMdd hh:MM:ss'));

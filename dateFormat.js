@@ -124,3 +124,16 @@ Date.prototype.minusSeconds = function(seconds){
 	this.setSeconds(parseInt(second)-parseInt(seconds));
 	return this;
 };
+String.prototype.toDate = function(){
+	var year = this.substring(0,4);
+	var month = this.substring(4,6);
+	var day = this.substring(6,8);
+	var hour = this.substring(8,10);
+	var minute = this.substring(10,12);
+	var second = this.substring(12,14);
+	var date = new Date(year+'-'+month+'-'+day);
+	date.setHours(hour);
+	date.setMinutes(minute);
+	date.setSeconds(second);
+	return date;
+}
