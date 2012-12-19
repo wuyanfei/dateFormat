@@ -12,7 +12,6 @@ Date.prototype.format = function(pattern) {
 		month = '0' + month;
 	}
 	pattern = pattern.replace(/MM/, month);
-	pattern = pattern.replace(/mm/, month);
 
 	var dayOfMonth = this.getDate();
 	var dayOfMonth2 = dayOfMonth;
